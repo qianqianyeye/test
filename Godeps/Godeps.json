@@ -1,0 +1,140 @@
+{
+	"ImportPath": "ServiceTest",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "git.jiaxianghudong.com/go/monitor/mysql",
+			"Rev": "955ca55e64787a794beb74322418933c7283e972"
+		},
+		{
+			"ImportPath": "git.jiaxianghudong.com/go/utils",
+			"Comment": "v0.1.1-11-g1b3e279",
+			"Rev": "1b3e2794a2a76cb4d9394b47d3050d7733e8d0d4"
+		},
+		{
+			"ImportPath": "github.com/disintegration/imaging",
+			"Comment": "v1.5.0-2-g32df956",
+			"Rev": "32df9565b4e0c1460f1915d53f6ff198d9a41af2"
+		},
+		{
+			"ImportPath": "github.com/dustin/go-humanize",
+			"Rev": "9f541cc9db5d55bce703bd99987c9d5cb8eea45e"
+		},
+		{
+			"ImportPath": "github.com/gin-contrib/sse",
+			"Rev": "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin",
+			"Comment": "v1.3.0-41-ge9f187f",
+			"Rev": "e9f187f60a27477e54c177f314db00d6a1abf062"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin/binding",
+			"Comment": "v1.3.0-41-ge9f187f",
+			"Rev": "e9f187f60a27477e54c177f314db00d6a1abf062"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin/internal/json",
+			"Comment": "v1.3.0-41-ge9f187f",
+			"Rev": "e9f187f60a27477e54c177f314db00d6a1abf062"
+		},
+		{
+			"ImportPath": "github.com/gin-gonic/gin/render",
+			"Comment": "v1.3.0-41-ge9f187f",
+			"Rev": "e9f187f60a27477e54c177f314db00d6a1abf062"
+		},
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.4.0-6-g361f66e",
+			"Rev": "361f66ef3b53de1f16b7f2af9ef38a6c159ceb3e"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Comment": "v1.2.0-23-gddf2292",
+			"Rev": "ddf22928ea3c56eb4292a0adbbf5001b1e8e7d0d"
+		},
+		{
+			"ImportPath": "github.com/itsjamie/gin-cors",
+			"Comment": "1.0.0",
+			"Rev": "97b4a9da79331dfa2b6d35f4cdd1e50f5148859c"
+		},
+		{
+			"ImportPath": "github.com/json-iterator/go",
+			"Comment": "1.1.5-8-g2433035",
+			"Rev": "2433035e513208b0f7bd5b50d0aecd889b2c1ff8"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Comment": "v0.0.4-6-g3fb116b",
+			"Rev": "3fb116b820352b7f0c281308a4d6250c22d94e27"
+		},
+		{
+			"ImportPath": "github.com/modern-go/concurrent",
+			"Comment": "1.0.3",
+			"Rev": "bacd9c7ef1dd9b15be4a9909b8ac7a4e313eec94"
+		},
+		{
+			"ImportPath": "github.com/modern-go/reflect2",
+			"Comment": "v1.0.1",
+			"Rev": "94122c33edd36123c84d5368cfb2b69df93a0ec8"
+		},
+		{
+			"ImportPath": "github.com/ugorji/go/codec",
+			"Comment": "v1.1.1-27-g99ea80c",
+			"Rev": "99ea80c8b19ad777f970258ca09c5c2d5826f0fd"
+		},
+		{
+			"ImportPath": "golang.org/x/image/bmp",
+			"Rev": "991ec62608f3c0da01d400756917825d1e2fd528"
+		},
+		{
+			"ImportPath": "golang.org/x/image/tiff",
+			"Rev": "991ec62608f3c0da01d400756917825d1e2fd528"
+		},
+		{
+			"ImportPath": "golang.org/x/image/tiff/lzw",
+			"Rev": "991ec62608f3c0da01d400756917825d1e2fd528"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "4497e2df6f9e69048a54498c7affbbec3294ad47"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding",
+			"Comment": "v0.3.0-62-g905a571",
+			"Rev": "905a57155faa8230500121607930ebb9dd8e139c"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/internal",
+			"Comment": "v0.3.0-62-g905a571",
+			"Rev": "905a57155faa8230500121607930ebb9dd8e139c"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/internal/identifier",
+			"Comment": "v0.3.0-62-g905a571",
+			"Rev": "905a57155faa8230500121607930ebb9dd8e139c"
+		},
+		{
+			"ImportPath": "golang.org/x/text/encoding/simplifiedchinese",
+			"Comment": "v0.3.0-62-g905a571",
+			"Rev": "905a57155faa8230500121607930ebb9dd8e139c"
+		},
+		{
+			"ImportPath": "golang.org/x/text/transform",
+			"Comment": "v0.3.0-62-g905a571",
+			"Rev": "905a57155faa8230500121607930ebb9dd8e139c"
+		},
+		{
+			"ImportPath": "gopkg.in/go-playground/validator.v8",
+			"Comment": "v8.18.2",
+			"Rev": "5f1438d3fca68893a817e4a66806cea46a9e4ebf"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Comment": "v2.2.1",
+			"Rev": "5420a8b6744d3b0345ab293f6fcba19c978f1183"
+		}
+	]
+}
