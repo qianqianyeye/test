@@ -77,7 +77,13 @@ func Delete(ctx *gin.Context)  {
 	ctx.JSON(http.StatusOK,gin.H{"data":"success"})
 }
 func Update(ctx *gin.Context)  {
-
+	user :=User{}
+	user.ID=int64(utils.Atoi(ctx.Param("id")))
+	if err:=ctx.Bind(&user);err==nil{
+		query :=fmt.Sprintf("update user set user_name ='%s' ,pass_word='%s',status=%v where id=%v",user.UserName,user.PassWord,user.Status,user.ID)
+		mysql.Insert(query)
+		ctx.JSON(http.StatusOK,gin.H{"data":"success"})
+	}
 }
 func Query(ctx *gin.Context)  {
 	var users []User
@@ -89,10 +95,14 @@ func Query(ctx *gin.Context)  {
 func Login(ctx *gin.Context)  {
 	user :=User{}
 	if err:=ctx.Bind(&user);err==nil{
-		result:= User{}
+		var result []User
 		query:=fmt.Sprintf("select * from user where user_name='%s' and pass_word='%s' and status=0",user.UserName,user.PassWord)
-		mysql.Query(query,&result)
-		if result.ID!=0 {
+		//fmt.Println(query)
+		err :=mysql.Query(query,&result)
+		if err!=nil {
+			fmt.Println(err)
+		}
+		if len(result)>0 {
 			ctx.JSON(http.StatusOK,gin.H{"data":"success"})
 		}else {
 			ctx.JSON(http.StatusOK,gin.H{"data":"username or password err"})
