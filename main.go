@@ -12,7 +12,7 @@ import (
 var (
 	userName="root"
 	passWord="root"
-	addr="mysql:3306"
+	addr="localhost"
 	db="test"
 	maxOpen=10
 	maxIdle=5
