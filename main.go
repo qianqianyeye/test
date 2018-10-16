@@ -12,7 +12,7 @@ import (
 var (
 	userName="root"
 	passWord="root"
-	addr="mysql:3306"
+	addr="localhost"
 	db="test"
 	maxOpen=10
 	maxIdle=5
@@ -63,7 +63,8 @@ func Add(ctx *gin.Context)  {
 	user.CreateTime=time.Now()
 	user.Status=0
 	if err:=ctx.Bind(&user);err==nil{
-		query:=fmt.Sprintf("insert intto user (user_name,pass_word) values ('%s','%s',%v)",user.UserName,user.PassWord,user.Status)
+		query:=fmt.Sprintf("insert into user (user_name,pass_word,status) values ('%s','%s',%v)",user.UserName,user.PassWord,user.Status)
+		fmt.Println(query)
 		mysql.Insert(query)
 		ctx.JSON(http.StatusOK,gin.H{"data":"success"})
 	}
@@ -72,10 +73,11 @@ func Add(ctx *gin.Context)  {
 
 func Delete(ctx *gin.Context)  {
 	id:=utils.Atoi(ctx.Param("id"))
-	query :=fmt.Sprintf("update user set status=%v",id)
+	query :=fmt.Sprintf("update user set status=2 where id=%v",id)
 	mysql.Insert(query)
 	ctx.JSON(http.StatusOK,gin.H{"data":"success"})
 }
+
 func Update(ctx *gin.Context)  {
 	user :=User{}
 	user.ID=int64(utils.Atoi(ctx.Param("id")))
