@@ -12,7 +12,7 @@ import (
 var (
 	userName="root"
 	passWord="root"
-	addr="localhost"
+	addr="192.168.99.128:3306"
 	db="test"
 	maxOpen=10
 	maxIdle=5
