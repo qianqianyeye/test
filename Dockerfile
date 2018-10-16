@@ -1,13 +1,5 @@
-
-FROM golang:latest
-
-MAINTAINER Razil "996888231@qq.com"
-
+FROM scratch
 WORKDIR $GOPATH/src/ServiceTest
 ADD . $GOPATH/src/ServiceTest
-RUN go get -u -v github.com/tools/godep
-RUN godep go build .
-
-EXPOSE 8011
-
-ENTRYPOINT ["./ServiceTest"]
+ENTRYPOINT ["./ServiceTest_linux_amd64"]
+#http://note.youdao.com/noteshare?id=667520ea387bf2df2872499a4a5139cb&sub=814570E78A7544D8AF178486BDEBCAC0
